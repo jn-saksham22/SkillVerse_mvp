@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Environment
+.env
+.env.*
+!.env.example
+!.env.production.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Runtime
+*.log
+
+# Prototype backups
+_final_backup/
+_final_backup_*/
+_final_archive/
+_final_snapshots/
+_source_archive/
+final_backup*/
+final_submission_backup_*/
+backend/**/backup_*/
+backend/**/_archive/
+backend/**/backup_*/
+data/
+*_backup*.sql
+*.db
+*.sqlite
+*.sqlite3
+frontend/build
+frontend/dev
+frontend/vite
+*.phase1-backup
+docs/CONVERSATION_LOG.md

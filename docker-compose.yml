@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: skillverse
+      POSTGRES_USER: skillverse
+      POSTGRES_PASSWORD: skillverse
+    ports:
+      - "5432:5432"
+    volumes:
+      - skillverse_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U skillverse -d skillverse"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+      start_period: 3s
+volumes:
+  skillverse_pg:
